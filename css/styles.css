@@ -321,6 +321,8 @@ img {
 .about-section {
     padding: var(--section-padding);
     background: var(--primary-soft-white);
+    position: relative;
+    z-index: 10;
 }
 
 .about-image {
