@@ -561,28 +561,6 @@ img {
 }
 
 /* ============================================
-   Booking Section
-   ============================================ */
-
-.booking-section {
-    padding: var(--section-padding);
-    background: linear-gradient(135deg, var(--neutral-light) 0%, var(--primary-champagne) 100%);
-}
-
-.booksy-widget-container {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    min-height: 600px;
-}
-
-#booksy-widget {
-    width: 100%;
-    min-height: 600px;
-}
-
-/* ============================================
    Gallery Section
    ============================================ */
 
@@ -794,6 +772,45 @@ img {
 .form-select:focus {
     border-color: var(--primary-rose-gold);
     box-shadow: 0 0 0 0.2rem rgba(183, 110, 121, 0.15);
+}
+
+.divider-text {
+    position: relative;
+    color: var(--neutral-dark);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.divider-text::before,
+.divider-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: var(--neutral-medium);
+}
+
+.divider-text::before {
+    left: 0;
+}
+
+.divider-text::after {
+    right: 0;
+}
+
+.booksy-link {
+    border: 2px solid var(--primary-rose-gold);
+    color: var(--primary-rose-gold);
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.booksy-link:hover {
+    background: var(--primary-rose-gold);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(183, 110, 121, 0.3);
 }
 
 /* ============================================
