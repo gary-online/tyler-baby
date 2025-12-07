@@ -1,0 +1,401 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Layout 
+    title="Tyler Sheetz | Premier Hair Extension Specialist - St. Petersburg, FL"
+    description="Tyler Sheetz - Premier Hair Extension Specialist in St. Petersburg, Florida. Expert in K-Tip, Beaded Weft, I-Tip, Tape, and V-Light extensions."
+>
+    <Navigation />
+    <Hero />
+
+    <!-- About Section -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image">
+                        <img src="/assets/images/tyler-profile.jpg" alt="Tyler Sheetz - Hair Extension Specialist" class="img-fluid rounded shadow-lg">
+                        <div class="about-badge">
+                            <i class="bi bi-award"></i>
+                            <span>Expert Certified</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-header mb-4">
+                        <span class="section-tag">About Tyler</span>
+                        <h2 class="section-title">St. Petersburg's Most Trusted Hair Extension Specialist</h2>
+                    </div>
+                    <div class="about-content">
+                        <p class="lead">With 18 years of dedicated experience and a passion for transforming lives through beautiful hair, Tyler Sheetz has become the go-to extension specialist in St. Petersburg, Florida.</p>
+                        <p>Tyler specializes in the most advanced hair extension techniques, ensuring seamless, natural-looking results that enhance your unique beauty. Each client receives personalized attention and customized solutions tailored to their hair type, lifestyle, and aesthetic goals.</p>
+                        <div class="about-highlights mt-4">
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Certified in Multiple Extension Techniques</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Premium Quality Hair Extensions</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Personalized Consultations</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Ongoing Care & Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5" id="services">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Expert Services</span>
+                <h2 class="section-title">Specialized Extension Techniques</h2>
+                <p class="section-description">Each method is carefully selected to match your hair type and desired results</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- K-Tip Extensions -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h3 class="service-title">K-Tip Extensions</h3>
+                        <p class="service-description">Premium keratin bonded extensions that blend seamlessly with your natural hair. Durable, long-lasting, and virtually undetectable.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2"></i> Long-lasting results</li>
+                            <li><i class="bi bi-check2"></i> Natural movement</li>
+                            <li><i class="bi bi-check2"></i> Heat resistant</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Beaded Weft -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card featured">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="service-icon">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h3 class="service-title">Beaded Weft</h3>
+                        <p class="service-description">Damage-free method using micro beads to secure wefts. Perfect for adding volume and length without heat or adhesives.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2"></i> No heat or glue</li>
+                            <li><i class="bi bi-check2"></i> Reusable extensions</li>
+                            <li><i class="bi bi-check2"></i> Scalp-friendly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- I-Tip -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-hexagon"></i>
+                        </div>
+                        <h3 class="service-title">I-Tip Extensions</h3>
+                        <p class="service-description">Individual strand extensions applied with micro beads. Offers maximum flexibility and natural-looking results.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2"></i> Customizable placement</li>
+                            <li><i class="bi bi-check2"></i> No adhesives</li>
+                            <li><i class="bi bi-check2"></i> Easy maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tape Extensions -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-layers"></i>
+                        </div>
+                        <h3 class="service-title">Tape Extensions</h3>
+                        <p class="service-description">Quick application method using medical-grade tape. Thin, lightweight, and comfortable for everyday wear.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2"></i> Fast application</li>
+                            <li><i class="bi bi-check2"></i> Lay flat design</li>
+                            <li><i class="bi bi-check2"></i> Reusable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- V-Light -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-brightness-high"></i>
+                        </div>
+                        <h3 class="service-title">V-Light Extensions</h3>
+                        <p class="service-description">Advanced technique for ultra-fine hair. Lightweight and virtually invisible, perfect for delicate hair types.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2"></i> Ultra-lightweight</li>
+                            <li><i class="bi bi-check2"></i> Fine hair friendly</li>
+                            <li><i class="bi bi-check2"></i> Invisible bonds</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Consultation -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card consultation-card">
+                        <div class="service-icon">
+                            <i class="bi bi-chat-heart"></i>
+                        </div>
+                        <h3 class="service-title">Free Consultation</h3>
+                        <p class="service-description">Not sure which method is right for you? Schedule a complimentary consultation to discuss your hair goals and find the perfect solution.</p>
+                        <a href="#contact" class="btn btn-primary mt-3">Schedule Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">See The Transformation</span>
+                <h2 class="section-title">Watch Tyler's Work Come to Life</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline class="video-player">
+                            <source src="/assets/videos/transformation-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <h4>Beaded Weft Transformation</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline class="video-player">
+                            <source src="/assets/videos/transformation-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <h4>K-Tip Application Process</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5" id="gallery">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Beautiful Results</h2>
+                <p class="section-description">Real transformations from real clients</p>
+            </div>
+            
+            <div class="row g-4">
+                {[1, 2, 3, 4, 5, 6].map((num) => (
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={num % 3 * 100}>
+                        <div class="gallery-item">
+                            <img src={`/assets/images/gallery-${num}.jpg`} alt="Hair Extension Transformation" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://instagram.com/tylersheetz" target="_blank" class="btn btn-outline-primary btn-lg">
+                    <i class="bi bi-instagram me-2"></i>View More on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Client Love</span>
+                <h2 class="section-title">What Clients Are Saying</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            {[...Array(5)].map(() => <i class="bi bi-star-fill"></i>)}
+                        </div>
+                        <p class="testimonial-text">"Tyler transformed my thin hair into the luscious locks I've always dreamed of! The beaded weft extensions look so natural, nobody can tell they're not my real hair. Absolutely in love!"</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>St. Petersburg, FL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            {[...Array(5)].map(() => <i class="bi bi-star-fill"></i>)}
+                        </div>
+                        <p class="testimonial-text">"I've been to many stylists, but Tyler is truly the best! His attention to detail and expertise with K-Tip extensions is unmatched. My hair has never looked better!"</p>
+                        <div class="testimonial-author">
+                            <strong>Jessica L.</strong>
+                            <span>Tampa Bay Area</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            {[...Array(5)].map(() => <i class="bi bi-star-fill"></i>)}
+                        </div>
+                        <p class="testimonial-text">"Professional, talented, and so personable! Tyler took the time to understand exactly what I wanted and delivered beyond my expectations. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <strong>Amanda R.</strong>
+                            <span>Clearwater, FL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="section-header mb-4">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Ready to Transform Your Hair?</h2>
+                        <p class="section-description">Book your consultation today and discover which extension method is perfect for you.</p>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>1592 Central Avenue<br>St. Petersburg, Florida<br>Serving Tampa Bay Area</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+17272765617">(727) 276-5617</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:tampatwirl@gmail.com">tampatwirl@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Hours</h4>
+                                <p>Open availability Monday through Saturday<br>Sunday - Available with Premium Price</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links mt-4">
+                        <a href="https://instagram.com/tylersheetz" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/tylersheetz" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://tiktok.com/@tylersheetz" target="_blank" class="social-link" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <h3 class="mb-4">Send a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Interested In</label>
+                                <select class="form-select" id="service" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="k-tip">K-Tip Extensions</option>
+                                    <option value="beaded-weft">Beaded Weft</option>
+                                    <option value="i-tip">I-Tip Extensions</option>
+                                    <option value="tape">Tape Extensions</option>
+                                    <option value="v-light">V-Light Extensions</option>
+                                    <option value="consultation">Free Consultation</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                        </form>
+                        <div id="formSuccess" class="alert alert-success mt-3 d-none">
+                            Thank you for your message! Tyler will get back to you soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                    <p class="mb-0">&copy; 2024 Tyler Sheetz Hair Extensions. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <p class="mb-0">Serving St. Petersburg, Tampa, Clearwater & Surrounding Areas</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</Layout>

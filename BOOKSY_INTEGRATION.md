@@ -1,6 +1,7 @@
 # Phase 2: Booksy Integration Guide
 
 ## Overview
+
 This document outlines the implementation strategy for integrating the Booksy scheduling system into Tyler Sheetz's hair extension website. This will enable clients to book appointments directly through the website.
 
 ---
@@ -8,6 +9,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
 ## About Booksy
 
 **Booksy** is a comprehensive booking and business management platform specifically designed for beauty and wellness professionals. It provides:
+
 - Online appointment scheduling
 - Calendar management
 - Client management
@@ -15,7 +17,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
 - Automated reminders
 - Business analytics
 
-**Website**: https://booksy.com
+**Website**: <https://booksy.com>
 
 ---
 
@@ -25,7 +27,8 @@ This document outlines the implementation strategy for integrating the Booksy sc
 
 **Description**: Embed Booksy's booking widget directly into your website.
 
-#### Pros:
+#### Pros - Widget Approach
+
 - ✅ Easy to implement (no backend coding required)
 - ✅ Fully managed by Booksy (updates, security, maintenance)
 - ✅ Professional booking interface
@@ -33,11 +36,12 @@ This document outlines the implementation strategy for integrating the Booksy sc
 - ✅ Includes calendar, services, and payment
 - ✅ Maintains Tyler's existing Booksy workflow
 
-#### Cons:
+#### Cons - Widget Approach
+
 - ❌ Limited customization of the widget appearance
 - ❌ Redirects may be needed for full booking flow
 
-#### Implementation Steps:
+#### Implementation Steps
 
 1. **Get Your Booksy Widget Code**
    - Log into Tyler's Booksy Business account
@@ -45,6 +49,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
    - Copy the provided embed code
 
 2. **Add Widget to Website**
+
    ```html
    <!-- Replace the "Book Now" section in index.html with: -->
    <section class="booking-section py-5" id="booking">
@@ -73,6 +78,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
    ```
 
 3. **Style the Widget Container**
+
    ```css
    /* Add to css/styles.css */
    .booking-section {
@@ -93,6 +99,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
    ```
 
 4. **Update Navigation**
+
    ```html
    <!-- Update navbar to include booking link -->
    <li class="nav-item"><a class="nav-link" href="#booking">Book Now</a></li>
@@ -104,16 +111,18 @@ This document outlines the implementation strategy for integrating the Booksy sc
 
 **Description**: Add a direct link or button that redirects to Tyler's Booksy booking page.
 
-#### Pros:
+#### Pros - Button/Link Approach
+
 - ✅ Simplest implementation
 - ✅ Full Booksy experience
 - ✅ No iframe limitations
 
-#### Cons:
+#### Cons - Button/Link Approach
+
 - ❌ Takes users away from website
 - ❌ Less integrated feel
 
-#### Implementation:
+#### Implementation
 
 ```html
 <!-- Replace "Book Now" buttons with direct Booksy link -->
@@ -130,18 +139,21 @@ This document outlines the implementation strategy for integrating the Booksy sc
 
 **Description**: Build a custom booking interface using Booksy's API.
 
-#### Pros:
+#### Pros - API Integration
+
 - ✅ Fully customizable design
 - ✅ Seamless brand integration
 - ✅ Custom features and workflows
 
-#### Cons:
+#### Cons - API Integration
+
 - ❌ Requires backend development
 - ❌ More complex maintenance
 - ❌ API access may require Booksy approval
 - ❌ Significantly more development time
 
-#### Requirements:
+#### Requirements
+
 - Backend server (Node.js, Python, PHP)
 - Database for caching (optional)
 - Booksy API credentials
@@ -155,6 +167,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
 ## Recommended Implementation Plan
 
 ### Phase 2A: Quick Launch (Week 1)
+
 1. Contact Booksy support to get widget/iframe code
 2. Add widget to website
 3. Style widget container to match brand
@@ -162,6 +175,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
 5. Deploy to production
 
 ### Phase 2B: Optimization (Week 2-3)
+
 1. Add loading animation for widget
 2. Implement fallback for iframe issues
 3. Add analytics tracking for booking conversions
@@ -169,6 +183,7 @@ This document outlines the implementation strategy for integrating the Booksy sc
 5. Optimize mobile experience
 
 ### Phase 2C: Enhancement (Month 2)
+
 1. Add booking CTA buttons throughout site
 2. Create promotional banner for first-time bookers
 3. Integrate with email marketing (if applicable)
@@ -182,18 +197,16 @@ This document outlines the implementation strategy for integrating the Booksy sc
 
 Contact Booksy support or access through business portal:
 
-```
 Booksy Business Portal Steps:
-1. Login at: https://us.booksy.com/business
+
+1. Login at: <https://us.booksy.com/business>
 2. Navigate to: Settings > Marketing > Online Booking
 3. Look for "Booking Widget" or "Website Integration"
 4. Copy the provided embed code or booking URL
-```
 
 If Tyler doesn't have a widget URL, you can typically construct it:
-```
-https://booksy.com/en-us/instant-booking?ba_s=[BUSINESS_ID]&hl=en-US
-```
+
+<https://booksy.com/en-us/instant-booking?ba_s=[BUSINESS_ID]&hl=en-US>
 
 ### Step 2: Enhanced Integration Code
 
@@ -453,13 +466,15 @@ document.querySelectorAll('.btn-book, a[href*="booksy"]').forEach(btn => {
 
 ## Support & Resources
 
-### Booksy Support:
-- **Help Center**: https://support.booksy.com
-- **Email**: support@booksy.com
-- **Phone**: Check Booksy dashboard for support number
-- **Business Portal**: https://us.booksy.com/business
+### Booksy Support
 
-### Integration Documentation:
+- **Help Center**: <https://support.booksy.com>
+- **Email**: <support@booksy.com>
+- **Phone**: Check Booksy dashboard for support number
+- **Business Portal**: <https://us.booksy.com/business>
+
+### Integration Documentation
+
 - Request API documentation from Booksy support
 - Widget customization options
 - Webhook setup for booking notifications
@@ -469,11 +484,13 @@ document.querySelectorAll('.btn-book, a[href*="booksy"]').forEach(btn => {
 ## Cost Considerations
 
 **Booksy Pricing** (as of 2024):
+
 - Basic plan: ~$29.99/month
 - Pro plan: ~$49.99/month (recommended for online booking)
 - Enterprise: Custom pricing
 
 **Website Costs**:
+
 - Domain: ~$12/year
 - Hosting: ~$5-20/month
 - SSL Certificate: Usually free with hosting
@@ -515,21 +532,27 @@ Once the basic Booksy integration is stable, consider:
 ## Troubleshooting Common Issues
 
 ### Issue: Widget not loading
-**Solution**: 
+
+**Solution**:
+
 - Check if Booksy URL is correct
 - Verify SSL certificate is active
 - Check browser console for errors
 - Ensure iframe is not blocked by CSP headers
 
 ### Issue: Widget looks broken on mobile
+
 **Solution**:
+
 - Add responsive CSS
 - Test with device emulators
 - Check viewport meta tag
 - Adjust iframe height
 
 ### Issue: Bookings not syncing
+
 **Solution**:
+
 - Verify Tyler's Booksy account is active
 - Check notification settings in Booksy
 - Test with a real booking
@@ -551,11 +574,13 @@ Once the basic Booksy integration is stable, consider:
 ## Questions?
 
 For technical questions about implementation:
+
 - Review Booksy's documentation
 - Contact Booksy developer support
 - Test in a staging environment first
 
 For business questions:
+
 - Consult with Tyler about preferred booking flow
 - Review Booksy's best practices
 - Consider customer experience throughout

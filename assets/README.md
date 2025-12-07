@@ -5,9 +5,10 @@ This directory contains all media assets for the Tyler Sheetz Hair Extensions we
 ## Directory Organization
 
 ### 📁 images/
+
 Contains all image files used throughout the website.
 
-#### Required Images:
+#### Required Images
 
 1. **tyler-profile.jpg** (About Section)
    - High-quality professional photo of Tyler Sheetz
@@ -33,7 +34,8 @@ Contains all image files used throughout the website.
    - 32x32px or 64x64px
    - Can be created from logo or initials "TS"
 
-#### Image Guidelines:
+#### Image Guidelines
+
 - **Format**: JPG for photos (compress to ~200KB per image for optimal loading)
 - **Quality**: High resolution but optimized for web
 - **Consistency**: Similar lighting and color grading across all images
@@ -42,9 +44,10 @@ Contains all image files used throughout the website.
 ---
 
 ### 📁 videos/
+
 Contains video content for the transformation showcase section.
 
-#### Required Videos:
+#### Required Videos
 
 1. **transformation-1.mp4** (Beaded Weft Transformation)
    - Showcasing the beaded weft application process or results
@@ -62,7 +65,8 @@ Contains video content for the transformation showcase section.
    - Aspect ratio: 16:9
    - File size: Under 10MB for optimal loading
 
-#### Video Guidelines:
+#### Video Guidelines
+
 - **Format**: MP4 with H.264 codec (most compatible)
 - **Length**: Keep under 30 seconds for autoplay content
 - **Quality**: Balance between quality and file size
@@ -75,13 +79,15 @@ Contains video content for the transformation showcase section.
 
 ## How to Add Your Assets
 
-### For Images:
+### For Images
+
 1. Place your images in the `images/` folder
 2. Name them exactly as specified above (case-sensitive)
 3. Ensure they are optimized for web (use tools like TinyPNG or ImageOptim)
 4. Recommended formats: JPG for photos, PNG for graphics with transparency
 
-### For Videos:
+### For Videos
+
 1. Place your videos in the `videos/` folder
 2. Name them exactly as specified above
 3. Ensure they are in MP4 format with H.264 codec
@@ -91,28 +97,32 @@ Contains video content for the transformation showcase section.
 
 ## Image Optimization Tools
 
-### Online Tools (Free):
-- **TinyPNG/TinyJPG**: https://tinypng.com (Compress images)
-- **Squoosh**: https://squoosh.app (Google's image compression tool)
-- **Compress JPEG**: https://compressjpeg.com
+### Online Tools (Free)
 
-### Desktop Tools:
-- **ImageOptim** (Mac): https://imageoptim.com
-- **RIOT** (Windows): http://luci.criosweb.ro/riot/
-- **GIMP** (Cross-platform): https://www.gimp.org
+- **TinyPNG/TinyJPG**: <https://tinypng.com> (Compress images)
+- **Squoosh**: <https://squoosh.app> (Google's image compression tool)
+- **Compress JPEG**: <https://compressjpeg.com>
+
+### Desktop Tools (Images)
+
+- **ImageOptim** (Mac): <https://imageoptim.com>
+- **RIOT** (Windows): <http://luci.criosweb.ro/riot/>
+- **GIMP** (Cross-platform): <https://www.gimp.org>
 
 ---
 
 ## Video Optimization Tools
 
-### Online Tools:
-- **CloudConvert**: https://cloudconvert.com (Convert and compress videos)
-- **Clideo**: https://clideo.com (Online video compressor)
+### Online Tools
 
-### Desktop Tools:
-- **HandBrake**: https://handbrake.fr (Free, powerful video compressor)
+- **CloudConvert**: <https://cloudconvert.com> (Convert and compress videos)
+- **Clideo**: <https://clideo.com> (Online video compressor)
+
+### Desktop Tools (Videos)
+
+- **HandBrake**: <https://handbrake.fr> (Free, powerful video compressor)
   - Settings: MP4 container, H.264 codec, 720p, RF 23-25
-- **FFmpeg** (Command line): https://ffmpeg.org
+- **FFmpeg** (Command line): <https://ffmpeg.org>
 
 ---
 
@@ -120,25 +130,29 @@ Contains video content for the transformation showcase section.
 
 Until you have your actual images and videos ready, you can use:
 
-### Stock Photo Sites (Free):
-- **Unsplash**: https://unsplash.com (Search: "hair extensions", "salon", "hairstylist")
-- **Pexels**: https://pexels.com
-- **Pixabay**: https://pixabay.com
+### Stock Photo Sites (Free)
 
-### Stock Video Sites (Free):
-- **Pexels Videos**: https://www.pexels.com/videos/
-- **Pixabay Videos**: https://pixabay.com/videos/
-- **Coverr**: https://coverr.co
+- **Unsplash**: <https://unsplash.com> (Search: "hair extensions", "salon", "hairstylist")
+- **Pexels**: <https://pexels.com>
+- **Pixabay**: <https://pixabay.com>
 
-### Image Placeholders:
-- **Placeholder.com**: https://placeholder.com
-  - Example: https://via.placeholder.com/800x1000/b76e79/ffffff?text=Tyler+Sheetz
+### Stock Video Sites (Free)
+
+- **Pexels Videos**: <https://www.pexels.com/videos/>
+- **Pixabay Videos**: <https://pixabay.com/videos/>
+- **Coverr**: <https://coverr.co>
+
+### Image Placeholders
+
+- **Placeholder.com**: <https://placeholder.com>
+  - Example: <https://via.placeholder.com/800x1000/b76e79/ffffff?text=Tyler+Sheetz>
 
 ---
 
 ## Social Media Integration
 
 Consider sourcing content from Tyler's existing social media:
+
 - Instagram posts and reels
 - TikTok videos
 - Facebook photos
@@ -171,6 +185,7 @@ Make sure you have rights to use all content on the website.
 ## Need Help?
 
 If you need assistance with:
+
 - Image editing or optimization
 - Video editing or compression
 - Sourcing professional photos
