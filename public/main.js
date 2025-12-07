@@ -91,64 +91,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================================
-    // Contact Form Handling
+    // Contact Form - Handled by Formspree
     // ============================================
-    const contactForm = document.getElementById('contactForm');
-    const formSuccess = document.getElementById('formSuccess');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                service: document.getElementById('service').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Here you would typically send the data to your backend
-            // For now, we'll just show a success message
-            console.log('Form submitted:', formData);
-            
-            // Show success message
-            formSuccess.classList.remove('d-none');
-            
-            // Reset form
-            contactForm.reset();
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                formSuccess.classList.add('d-none');
-            }, 5000);
-            
-            // Scroll to success message
-            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            
-            // TODO: Replace with actual form submission
-            // Example using fetch API:
-            /*
-            fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                formSuccess.classList.remove('d-none');
-                contactForm.reset();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error submitting your message. Please try again.');
-            });
-            */
-        });
-    }
+    // Form submission is handled by Formspree (action attribute)
+    // No JavaScript interception needed
 
     // ============================================
     // Gallery Image Modal (Simple Lightbox Effect)
