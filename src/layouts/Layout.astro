@@ -15,8 +15,76 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
-    <meta name="keywords" content="hair extensions, St. Petersburg, Florida, K-Tip, Beaded Weft, I-Tip, Tape extensions, V-Light, hair stylist">
+    <meta name="keywords" content="hair extensions St Petersburg, hair extensions Tampa Bay, K-Tip extensions Florida, Beaded Weft St Pete, I-Tip extensions, Tape extensions, V-Light extensions, professional hair extensionist, St Petersburg hair salon, Tampa hair extensions">
+    <meta name="author" content="Tyler Sheetz">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://saintpetehairextensions.com" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saintpetehairextensions.com">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="https://saintpetehairextensions.com/assets/images/tyler-profile.jpeg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Tyler Sheetz Hair Extensions">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://saintpetehairextensions.com">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content="https://saintpetehairextensions.com/assets/images/tyler-profile.jpeg">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="St. Petersburg">
+    <meta name="geo.position" content="27.7676;-82.6403">
+    <meta name="ICBM" content="27.7676, -82.6403">
+    
     <title>{title}</title>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Tyler Sheetz Hair Extensions",
+      "image": "https://saintpetehairextensions.com/assets/images/tyler-profile.jpeg",
+      "@id": "https://saintpetehairextensions.com",
+      "url": "https://saintpetehairextensions.com",
+      "telephone": "+17272765617",
+      "email": "tampatwirl@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1592 Central Avenue",
+        "addressLocality": "St. Petersburg",
+        "addressRegion": "FL",
+        "postalCode": "33712",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.7676,
+        "longitude": -82.6403
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "priceRange": "$$$",
+      "description": "Premier hair extension specialist in St. Petersburg, FL. Expert in K-Tip, Beaded Weft, I-Tip, Tape, and V-Light extensions with 18 years of experience.",
+      "sameAs": [
+        "https://www.instagram.com/st_pete_hair_extensions",
+        "https://www.tiktok.com/@tylersheetz88"
+      ]
+    }
+    </script>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
