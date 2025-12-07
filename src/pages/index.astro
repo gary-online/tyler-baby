@@ -17,7 +17,7 @@ import Hero from '../components/Hero.astro';
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="about-image">
-                        <img src="/assets/images/tyler-profile.jpeg" alt="Tyler Sheetz - Hair Extension Specialist" class="img-fluid rounded shadow-lg">
+                        <img src="/assets/images/tyler-profile.jpeg" alt="Tyler Sheetz professional hair extension specialist St. Petersburg Florida with 18 years experience" class="img-fluid rounded shadow-lg">
                         <div class="about-badge">
                             <i class="bi bi-award"></i>
                             <span>Board Certified</span>
@@ -172,10 +172,17 @@ import Hero from '../components/Hero.astro';
             </div>
             
             <div class="row g-4">
-                {[1, 2, 3, 4, 5, 6].map((num) => (
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={num % 3 * 100}>
+                {[
+                    {num: 1, alt: "K-Tip hair extension before and after transformation by Tyler Sheetz in St. Petersburg FL"},
+                    {num: 2, alt: "Beaded Weft hair extensions natural volume and length results St. Petersburg"},
+                    {num: 3, alt: "I-Tip hair extension installation seamless blend natural hair St Pete"},
+                    {num: 4, alt: "Tape-in hair extensions before after photo St. Petersburg hair stylist"},
+                    {num: 5, alt: "V-Light hair extension transformation long flowing hair St. Petersburg FL"},
+                    {num: 6, alt: "Professional hair extension results luxury hair extensions St Pete Florida"}
+                ].map((item) => (
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={item.num % 3 * 100}>
                         <div class="gallery-item">
-                            <img src={`/assets/images/gallery-${num}.jpeg`} alt="Hair Extension Transformation" class="img-fluid">
+                            <img src={`/assets/images/gallery-${item.num}.jpeg`} alt={item.alt} class="img-fluid">
                             <div class="gallery-overlay">
                                 <i class="bi bi-zoom-in"></i>
                             </div>
