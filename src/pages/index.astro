@@ -295,13 +295,13 @@ import Hero from '../components/Hero.astro';
                     </div>
                     
                     <div class="social-links mt-4">
-                        <a href="https://instagram.com/tylersheetz" target="_blank" class="social-link" aria-label="Instagram">
+                        <a href="https://www.instagram.com/st_pete_hair_extensions/" target="_blank" class="social-link" aria-label="Instagram">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="https://facebook.com/tylersheetz" target="_blank" class="social-link" aria-label="Facebook">
+                        <a href="https://www.facebook.com/tylerstailoredhair" target="_blank" class="social-link" aria-label="Facebook">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="https://tiktok.com/@tylersheetz" target="_blank" class="social-link" aria-label="TikTok">
+                        <a href="https://www.tiktok.com/@hairdoc15" target="_blank" class="social-link" aria-label="TikTok">
                             <i class="bi bi-tiktok"></i>
                         </a>
                     </div>
@@ -310,22 +310,22 @@ import Hero from '../components/Hero.astro';
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="contact-form-wrapper">
                         <h3 class="mb-4">Send a Message</h3>
-                        <form id="contactForm" class="contact-form">
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xanrdnob" method="POST">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone">
+                                <input type="tel" class="form-control" id="phone" name="phone">
                             </div>
                             <div class="mb-3">
                                 <label for="service" class="form-label">Interested In</label>
-                                <select class="form-select" id="service" required>
+                                <select class="form-select" id="service" name="service" required>
                                     <option value="">Select a service...</option>
                                     <option value="k-tip">K-Tip Extensions</option>
                                     <option value="beaded-weft">Beaded Weft</option>
@@ -337,7 +337,7 @@ import Hero from '../components/Hero.astro';
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
                         </form>
