@@ -327,11 +327,15 @@ img {
 
 .about-image {
     position: relative;
+    max-width: 100%;
 }
 
 .about-image img {
     border-radius: 10px;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 600px;
 }
 
 .about-badge {
@@ -874,10 +878,28 @@ img {
         text-align: center;
     }
     
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+        letter-spacing: 1px;
+        padding: 0 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(0.9rem, 4vw, 1.3rem);
+        letter-spacing: 2px;
+        padding: 0 1rem;
+    }
+    
+    .hero-cta {
+        padding: 0 1rem;
+    }
+    
     .hero-cta .btn {
         display: block;
         width: 100%;
         margin-bottom: 1rem;
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
     }
     
     .contact-form-wrapper {
@@ -886,6 +908,33 @@ img {
     
     .service-card {
         padding: 2rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.2;
+        word-break: break-word;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+        letter-spacing: 1.5px;
+        line-height: 1.4;
+    }
+    
+    .hero-cta .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+    }
+    
+    .brand-name {
+        font-size: 1.5rem;
+    }
+    
+    .brand-tagline {
+        font-size: 0.65rem;
     }
 }
 

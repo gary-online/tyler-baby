@@ -17,10 +17,10 @@ import Hero from '../components/Hero.astro';
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="about-image">
-                        <img src="/assets/images/tyler-profile.jpg" alt="Tyler Sheetz - Hair Extension Specialist" class="img-fluid rounded shadow-lg">
+                        <img src="/assets/images/tyler-profile.jpeg" alt="Tyler Sheetz - Hair Extension Specialist" class="img-fluid rounded shadow-lg">
                         <div class="about-badge">
                             <i class="bi bi-award"></i>
-                            <span>Expert Certified</span>
+                            <span>Board Certified</span>
                         </div>
                     </div>
                 </div>
@@ -162,41 +162,6 @@ import Hero from '../components/Hero.astro';
         </div>
     </section>
 
-    <!-- Video Showcase Section -->
-    <section class="video-section py-5">
-        <div class="container">
-            <div class="section-header text-center mb-5" data-aos="fade-up">
-                <span class="section-tag">See The Transformation</span>
-                <h2 class="section-title">Watch Tyler's Work Come to Life</h2>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-6" data-aos="fade-up">
-                    <div class="video-container">
-                        <video autoplay muted loop playsinline class="video-player">
-                            <source src="/assets/videos/transformation-1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-overlay">
-                            <h4>Beaded Weft Transformation</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="video-container">
-                        <video autoplay muted loop playsinline class="video-player">
-                            <source src="/assets/videos/transformation-2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-overlay">
-                            <h4>K-Tip Application Process</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Gallery Section -->
     <section class="gallery-section py-5" id="gallery">
         <div class="container">
@@ -210,7 +175,7 @@ import Hero from '../components/Hero.astro';
                 {[1, 2, 3, 4, 5, 6].map((num) => (
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={num % 3 * 100}>
                         <div class="gallery-item">
-                            <img src={`/assets/images/gallery-${num}.jpg`} alt="Hair Extension Transformation" class="img-fluid">
+                            <img src={`/assets/images/gallery-${num}.jpeg`} alt="Hair Extension Transformation" class="img-fluid">
                             <div class="gallery-overlay">
                                 <i class="bi bi-zoom-in"></i>
                             </div>
@@ -220,7 +185,7 @@ import Hero from '../components/Hero.astro';
             </div>
             
             <div class="text-center mt-5">
-                <a href="https://instagram.com/tylersheetz" target="_blank" class="btn btn-outline-primary btn-lg">
+                <a href="https://www.instagram.com/st_pete_hair_extensions" target="_blank" class="btn btn-outline-primary btn-lg">
                     <i class="bi bi-instagram me-2"></i>View More on Instagram
                 </a>
             </div>
