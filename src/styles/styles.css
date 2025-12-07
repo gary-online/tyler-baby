@@ -561,6 +561,28 @@ img {
 }
 
 /* ============================================
+   Booking Section
+   ============================================ */
+
+.booking-section {
+    padding: var(--section-padding);
+    background: linear-gradient(135deg, var(--neutral-light) 0%, var(--primary-champagne) 100%);
+}
+
+.booksy-widget-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+}
+
+#booksy-widget {
+    width: 100%;
+    min-height: 600px;
+}
+
+/* ============================================
    Gallery Section
    ============================================ */
 
