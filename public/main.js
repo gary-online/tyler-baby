@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    window.addEventListener('scroll', updateNavbar);
-    updateNavbar(); // Check on page load
+    updateNavbar();
 
     // ============================================
     // Smooth Scrolling for Navigation Links
@@ -91,10 +90,50 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================================
-    // Contact Form - Handled by Formspree
+    // Contact Form Handling (Formspree)
     // ============================================
-    // Form submission is handled by Formspree (action attribute)
-    // No JavaScript interception needed
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    const formError = document.getElementById('formError');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                if (response.ok) {
+                    formSuccess.classList.remove('d-none');
+                    if (formError) formError.classList.add('d-none');
+                    contactForm.reset();
+                    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    setTimeout(() => formSuccess.classList.add('d-none'), 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(() => {
+                if (formError) {
+                    formError.classList.remove('d-none');
+                    formError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    setTimeout(() => formError.classList.add('d-none'), 5000);
+                }
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
+        });
+    }
 
     // ============================================
     // Gallery Image Modal (Simple Lightbox Effect)
@@ -198,23 +237,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.head.appendChild(styles);
             }
             
+            // Focus the close button for keyboard users
+            const closeBtn = modal.querySelector('.gallery-modal-close');
+            closeBtn.focus();
+
             // Close modal handlers
             const closeModal = () => {
                 modal.remove();
                 document.body.style.overflow = '';
+                item.focus();
             };
-            
-            modal.querySelector('.gallery-modal-close').addEventListener('click', closeModal);
+
+            closeBtn.addEventListener('click', closeModal);
             modal.querySelector('.gallery-modal-backdrop').addEventListener('click', closeModal);
-            
-            // Close on escape key
-            const escapeHandler = (e) => {
+
+            // Close on escape, trap focus inside modal
+            const keyHandler = (e) => {
                 if (e.key === 'Escape') {
                     closeModal();
-                    document.removeEventListener('keydown', escapeHandler);
+                    document.removeEventListener('keydown', keyHandler);
+                }
+                if (e.key === 'Tab') {
+                    e.preventDefault();
+                    closeBtn.focus();
                 }
             };
-            document.addEventListener('keydown', escapeHandler);
+            document.addEventListener('keydown', keyHandler);
+        }
+
+        item.addEventListener('click', openLightbox);
+        item.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openLightbox();
+            }
         });
     });
 
@@ -243,62 +299,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    window.addEventListener('scroll', highlightNavigation);
-    highlightNavigation(); // Check on page load
-
-    // ============================================
-    // Parallax Effect for Hero Section
-    // ============================================
-    const heroSection = document.querySelector('.hero-section');
-    
-    if (heroSection) {
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallaxSpeed = 0.5;
-            
-            if (scrolled < heroSection.offsetHeight) {
-                heroSection.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-            }
-        });
+    // Throttled scroll handler using requestAnimationFrame
+    let scrollTicking = false;
+    function onScroll() {
+        if (!scrollTicking) {
+            requestAnimationFrame(() => {
+                updateNavbar();
+                highlightNavigation();
+                if (heroSection) {
+                    const scrolled = window.pageYOffset;
+                    if (scrolled < heroSection.offsetHeight) {
+                        heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+                    }
+                }
+                scrollTicking = false;
+            });
+            scrollTicking = true;
+        }
     }
 
+    const heroSection = document.querySelector('.hero-section');
+    window.addEventListener('scroll', onScroll);
+    highlightNavigation();
+
     // ============================================
-    // Loading Animation (Optional)
+    // Loading Animation
     // ============================================
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
-        
-        // Add fade-in animation to body
-        if (!document.getElementById('loading-styles')) {
-            const loadingStyles = document.createElement('style');
-            loadingStyles.id = 'loading-styles';
-            loadingStyles.textContent = `
-                body {
-                    opacity: 0;
-                    transition: opacity 0.5s ease;
-                }
-                
-                body.loaded {
-                    opacity: 1;
-                }
-            `;
-            document.head.appendChild(loadingStyles);
-        }
-    });
-
-    // ============================================
-    // Service Card Animation Enhancement
-    // ============================================
-    const serviceCards = document.querySelectorAll('.service-card');
-    
-    serviceCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
     });
 
     // ============================================

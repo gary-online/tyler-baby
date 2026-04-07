@@ -6,14 +6,5 @@ export default defineConfig({
   output: 'static',
   build: {
     assets: 'assets'
-  },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import "src/styles/variables.css";`
-        }
-      }
-    }
   }
 });

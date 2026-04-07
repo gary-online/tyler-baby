@@ -917,6 +917,10 @@ img {
         text-align: center;
     }
     
+    .hero-section {
+        background-attachment: scroll;
+    }
+
     .hero-title {
         font-size: clamp(2rem, 10vw, 3rem);
         letter-spacing: 1px;
@@ -1003,6 +1007,19 @@ img {
 
 [data-aos] {
     pointer-events: auto;
+}
+
+/* ============================================
+   Loading Animation
+   ============================================ */
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 /* ============================================
