@@ -46,7 +46,7 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     
     <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
+    <script is:inline type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HairSalon",

@@ -5,6 +5,7 @@ A professional, modern landing page for St. Petersburg's premier hair extension 
 ## 🌟 Features
 
 ### Current Implementation (Phase 1)
+
 - ✅ **Responsive Design**: Fully mobile-friendly using Bootstrap 5
 - ✅ **Modern Aesthetics**: Sophisticated rose gold & champagne color palette
 - ✅ **Service Showcase**: Dedicated sections for all extension types (K-Tip, Beaded Weft, I-Tip, Tape, V-Light)
@@ -16,6 +17,7 @@ A professional, modern landing page for St. Petersburg's premier hair extension 
 - ✅ **SEO Optimized**: Semantic HTML, meta tags, and proper structure
 
 ### Coming Soon (Phase 2)
+
 - 📅 **Booksy Integration**: Direct appointment booking
 - 📊 **Analytics**: Google Analytics 4 tracking
 - 📱 **Instagram Feed**: Live social media integration
@@ -61,6 +63,7 @@ The site uses a sophisticated palette perfect for a luxury hair stylist:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Modern web browser
 - Code editor (VS Code recommended)
 - Basic knowledge of HTML/CSS/JavaScript
@@ -92,35 +95,41 @@ The site uses a sophisticated palette perfect for a luxury hair stylist:
 ### Deployment Options
 
 #### Option 1: Netlify (Recommended - Free)
-1. Create account at https://netlify.com
+
+1. Create account at <https://netlify.com>
 2. Drag and drop your project folder
 3. Get instant HTTPS domain
 4. Automatic deployments on updates
 
 #### Option 2: Vercel (Free)
-1. Create account at https://vercel.com
+
+1. Create account at <https://vercel.com>
 2. Import from GitHub or upload files
 3. Automatic HTTPS and global CDN
 
 #### Option 3: GitHub Pages (Free)
+
 1. Create GitHub repository
 2. Push code to repository
 3. Enable GitHub Pages in settings
 4. Access at: `username.github.io/repo-name`
 
 #### Option 4: Traditional Hosting
+
 - Upload files via FTP to any web host
 - Works with: Bluehost, HostGator, GoDaddy, etc.
 
 ## 📋 Asset Requirements
 
-### Images Needed:
+### Images Needed
+
 1. `tyler-profile.jpg` - Professional photo of Tyler (800x1000px)
 2. `gallery-1.jpg` through `gallery-6.jpg` - Before/after transformations (800x1000px each)
 3. `hero-bg.jpg` - Optional hero background (1920x1080px)
 4. `favicon.ico` - Browser tab icon (32x32px)
 
-### Videos Needed:
+### Videos Needed
+
 1. `transformation-1.mp4` - Beaded weft showcase (15-30 seconds, under 10MB)
 2. `transformation-2.mp4` - K-Tip application (15-30 seconds, under 10MB)
 
@@ -137,7 +146,7 @@ In `index.html`, find and update:
 <a href="tel:+17275551234">(727) 555-1234</a>
 
 <!-- Email -->
-<a href="mailto:hello@tylersheetz.com">hello@tylersheetz.com</a>
+<a href="mailto:tampatwirl@gmail.com">tampatwirl@gmail.com</a>
 
 <!-- Social Media -->
 <a href="https://instagram.com/tylersheetz">Instagram</a>
@@ -198,24 +207,28 @@ This document covers:
 ## 🐛 Troubleshooting
 
 ### Videos not playing
+
 - Ensure videos are in MP4 format with H.264 codec
 - Check file size (keep under 10MB)
 - Verify file names match HTML references
 - Some browsers block autoplay with sound (videos muted by default)
 
 ### Images not loading
+
 - Verify image files exist in `assets/images/` folder
 - Check file names match HTML references (case-sensitive)
 - Ensure images are web-optimized (under 200KB each)
 
 ### Contact form not working
+
 - Current implementation shows a success message only
 - For production, integrate with a backend service:
-  - Formspree: https://formspree.io
-  - Netlify Forms: https://www.netlify.com/products/forms/
-  - EmailJS: https://www.emailjs.com
+  - Formspree: <https://formspree.io>
+  - Netlify Forms: <https://www.netlify.com/products/forms/>
+  - EmailJS: <https://www.emailjs.com>
 
 ### Animations not working
+
 - Ensure AOS library is loading (check browser console)
 - Verify internet connection (CDN dependencies)
 - Check JavaScript console for errors
@@ -224,7 +237,7 @@ This document covers:
 
 ### Google Analytics 4
 
-1. Create GA4 property at https://analytics.google.com
+1. Create GA4 property at <https://analytics.google.com>
 2. Get your Measurement ID
 3. Add to `index.html` before closing `</head>`:
 
@@ -249,9 +262,10 @@ This document covers:
 
 ## 📝 License & Usage
 
-This website is designed specifically for Tyler Sheetz Hair Extensions. 
+This website is designed specifically for Tyler Sheetz Hair Extensions.
 
 For questions about licensing or using this template:
+
 - Contact the developer
 - Ensure you have rights to all images and content
 - Respect Bootstrap's MIT license
@@ -259,19 +273,22 @@ For questions about licensing or using this template:
 
 ## 🤝 Support
 
-### For Technical Issues:
+### For Technical Issues
+
 - Review documentation in this README
 - Check `IMPROVEMENTS.md` for best practices
 - Consult Bootstrap 5 documentation
 - Browser developer tools (F12)
 
-### For Content Updates:
+### For Content Updates
+
 - Edit HTML directly for text changes
 - Update CSS for style modifications
 - Modify JavaScript for functionality changes
 - Optimize assets before uploading
 
-### For Booksy Integration:
+### For Booksy Integration
+
 - See `BOOKSY_INTEGRATION.md`
 - Contact Booksy support
 - Test in staging before production
@@ -296,7 +313,8 @@ Before launching:
 ## 📞 Contact
 
 For questions about this website:
-- **Email**: hello@tylersheetz.com
+
+- **Email**: <tampatwirl@gmail.com>
 - **Phone**: (727) 555-1234
 - **Instagram**: @tylersheetz
 - **Location**: St. Petersburg, Florida
