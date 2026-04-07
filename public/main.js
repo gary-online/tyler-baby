@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     .gallery-modal-close:hover {
                         transform: rotate(90deg);
-                        color: #b76e79;
+                        color: #9a8367;
                     }
                     
                     @keyframes fadeIn {
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 right: 30px;
                 width: 50px;
                 height: 50px;
-                background: var(--primary-rose-gold, #b76e79);
+                background: var(--primary-rose-gold, #9a8367);
                 color: white;
                 border: none;
                 border-radius: 50%;
@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                box-shadow: 0 5px 20px rgba(183, 110, 121, 0.4);
+                box-shadow: 0 5px 20px rgba(154, 131, 103, 0.4);
             }
             
             .scroll-to-top.visible {
@@ -345,8 +345,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             .scroll-to-top:hover {
                 transform: translateY(-5px);
-                box-shadow: 0 8px 25px rgba(183, 110, 121, 0.5);
-                background: var(--accent-rose, #d4a5a5);
+                box-shadow: 0 8px 25px rgba(154, 131, 103, 0.5);
+                background: var(--accent-rose, #0c4d90);
             }
             
             @media (max-width: 768px) {
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     // Console Welcome Message
     // ============================================
-    console.log('%c✨ Tyler Sheetz Hair Extensions ✨', 'font-size: 20px; font-weight: bold; color: #b76e79;');
+    console.log('%c✨ Tyler Sheetz Hair Extensions ✨', 'font-size: 20px; font-weight: bold; color: #9a8367;');
     console.log('%cWebsite developed with ❤️', 'font-size: 12px; color: #666;');
     
 });

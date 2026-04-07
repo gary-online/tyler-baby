@@ -1,25 +1,25 @@
 /* ============================================
    Tyler Sheetz Hair Extensions - Custom Styles
-   Color Scheme: Rose Gold, Champagne, Black & Soft Neutrals
+   Color Scheme: Gold/Brown, Blue & Dark Blue
    ============================================ */
 
 :root {
     /* Primary Colors - Sophisticated Hair Stylist Palette */
-    --primary-rose-gold: #b76e79;
-    --primary-champagne: #f4e4d7;
+    --primary-rose-gold: #9a8367;
+    --primary-champagne: #e0d5c3;
     --primary-black: #1a1a1a;
     --primary-soft-white: #fafaf8;
-    
+
     /* Accent Colors */
-    --accent-rose: #d4a5a5;
-    --accent-gold: #c9a36a;
-    --accent-blush: #f7e7e1;
-    --accent-charcoal: #3a3a3a;
-    
+    --accent-rose: #0c4d90;
+    --accent-gold: #0c4d90;
+    --accent-blush: #f0e8da;
+    --accent-charcoal: #2a3b59;
+
     /* Neutral Shades */
-    --neutral-light: #f5f0eb;
-    --neutral-medium: #e8dfd6;
-    --neutral-dark: #5a4a42;
+    --neutral-light: #f0ebe4;
+    --neutral-medium: #ddd5c9;
+    --neutral-dark: #3d4a5c;
     
     /* Semantic Colors */
     --success: #7ba77d;
@@ -158,7 +158,7 @@ img {
     background: var(--accent-rose);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(183, 110, 121, 0.3);
+    box-shadow: 0 5px 15px rgba(154, 131, 103, 0.3);
 }
 
 /* ============================================
@@ -199,7 +199,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(183, 110, 121, 0.4));
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(154, 131, 103, 0.4));
     z-index: 1;
 }
 
@@ -245,7 +245,7 @@ img {
     border-color: var(--primary-rose-gold);
     color: var(--primary-rose-gold);
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(183, 110, 121, 0.3);
+    box-shadow: 0 10px 30px rgba(154, 131, 103, 0.3);
 }
 
 .hero-cta .btn-outline-light {
@@ -350,7 +350,7 @@ img {
     align-items: center;
     gap: 0.5rem;
     font-weight: 500;
-    box-shadow: 0 5px 20px rgba(183, 110, 121, 0.4);
+    box-shadow: 0 5px 20px rgba(154, 131, 103, 0.4);
 }
 
 .about-badge i {
@@ -413,7 +413,7 @@ img {
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(183, 110, 121, 0.2);
+    box-shadow: 0 15px 40px rgba(154, 131, 103, 0.2);
     border-color: var(--primary-rose-gold);
 }
 
@@ -512,7 +512,7 @@ img {
 }
 
 .consultation-card .service-icon {
-    background: rgba(183, 110, 121, 0.3);
+    background: rgba(154, 131, 103, 0.3);
     color: var(--primary-rose-gold);
 }
 
@@ -590,7 +590,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(183, 110, 121, 0.9);
+    background: rgba(154, 131, 103, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -739,7 +739,7 @@ img {
 .social-link:hover {
     background: var(--accent-gold);
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(183, 110, 121, 0.3);
+    box-shadow: 0 5px 15px rgba(154, 131, 103, 0.3);
 }
 
 .contact-form-wrapper {
@@ -771,7 +771,7 @@ img {
 .form-control:focus,
 .form-select:focus {
     border-color: var(--primary-rose-gold);
-    box-shadow: 0 0 0 0.2rem rgba(183, 110, 121, 0.15);
+    box-shadow: 0 0 0 0.2rem rgba(154, 131, 103, 0.15);
 }
 
 .divider-text {
@@ -810,7 +810,7 @@ img {
     background: var(--primary-rose-gold);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(183, 110, 121, 0.3);
+    box-shadow: 0 5px 20px rgba(154, 131, 103, 0.3);
 }
 
 /* ============================================
@@ -844,7 +844,7 @@ img {
     background: var(--accent-rose);
     border-color: var(--accent-rose);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(183, 110, 121, 0.3);
+    box-shadow: 0 8px 20px rgba(154, 131, 103, 0.3);
 }
 
 .btn-outline-primary {
@@ -862,7 +862,7 @@ img {
     border-color: var(--primary-rose-gold);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(183, 110, 121, 0.3);
+    box-shadow: 0 8px 20px rgba(154, 131, 103, 0.3);
 }
 
 /* ============================================

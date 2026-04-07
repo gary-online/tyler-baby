@@ -26,7 +26,7 @@ A professional, modern landing page for St. Petersburg's premier hair extension 
 
 ## 🗂️ Project Structure
 
-```
+```text
 tyler-baby/
 │
 ├── index.html              # Main landing page
@@ -53,12 +53,12 @@ tyler-baby/
 
 The site uses a sophisticated palette perfect for a luxury hair stylist:
 
-- **Primary Rose Gold**: `#b76e79` - Main brand color
-- **Champagne**: `#f4e4d7` - Elegant accent
+- **Gold/Brown**: `#9a8367` - Main brand color
+- **Champagne**: `#e0d5c3` - Elegant accent
 - **Soft White**: `#fafaf8` - Clean background
-- **Accent Rose**: `#d4a5a5` - Hover states
-- **Charcoal**: `#3a3a3a` - Dark elements
-- **Gold**: `#c9a36a` - Premium highlights
+- **Blue**: `#0c4d90` - Hover states & accents
+- **Dark Blue**: `#2a3b59` - Dark elements
+- **Warm Neutral**: `#e0d5c3` - Subtle backgrounds
 
 ## 🚀 Getting Started
 
@@ -167,6 +167,7 @@ For detailed instructions on adding online booking functionality:
 **See: `BOOKSY_INTEGRATION.md`**
 
 This guide includes:
+
 - Step-by-step Booksy widget integration
 - Multiple implementation options
 - Code examples and troubleshooting
@@ -179,6 +180,7 @@ For comprehensive UX/UI recommendations and best practices:
 **See: `IMPROVEMENTS.md`**
 
 This document covers:
+
 - Design enhancements
 - SEO optimization
 - Performance improvements
@@ -343,6 +345,6 @@ This website was designed with these principles:
 
 ---
 
-**Built with ❤️ for Tyler Sheetz Hair Extensions**
+Built with ❤️ for Tyler Sheetz Hair Extensions
 
-*Last Updated: December 2024*
+Last Updated: April 2026
