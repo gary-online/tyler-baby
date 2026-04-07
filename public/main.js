@@ -379,6 +379,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================================
+    // Cookie Consent Banner
+    // ============================================
+    const cookieBanner = document.getElementById('cookieBanner');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+        setTimeout(() => {
+            cookieBanner.classList.add('visible');
+        }, 1000);
+    }
+
+    if (cookieAccept) {
+        cookieAccept.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.classList.remove('visible');
+            // Load analytics scripts here when ready
+            // e.g., loadGA4(), loadMetaPixel()
+        });
+    }
+
+    if (cookieDecline) {
+        cookieDecline.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieBanner.classList.remove('visible');
+        });
+    }
+
+    // ============================================
     // Console Welcome Message
     // ============================================
     console.log('%c✨ Tyler Sheetz Hair Extensions ✨', 'font-size: 20px; font-weight: bold; color: #9a8367;');
